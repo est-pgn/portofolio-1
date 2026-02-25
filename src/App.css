@@ -1,0 +1,307 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html, body, #root{
+  width:100%;
+  overflow-x:hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO WRAPPER (imaginea continuă) */
+.hero-wrapper{
+  background:url('/images/hero.jpg') center/cover no-repeat;
+  min-height:100vh;
+  color:white;
+}
+
+/* HEADER */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem 6%;
+
+  background: rgba(0,0,0,0.35);
+ 
+
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.header-left h1{
+  font-size:1.8rem;
+}
+
+.header-left span{
+  opacity:.8;
+}
+
+.header-right a{
+  margin-left:2rem;
+  text-decoration:none;
+  color:black;   /* text negru */
+  font-weight:700;
+
+}
+
+/* HERO CONTENT */
+.hero{
+  min-height:80vh;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  padding:0 6%;
+}
+
+.hero-content{
+  max-width:500px;
+  text-align:right;
+  color: black;
+}
+
+.hero-content h1{
+  font-size:clamp(2.5rem,5vw,4rem);
+}
+
+.hero-content p{
+  font-size:1.2rem;
+  margin:1rem 0 2rem;
+}
+
+/* BUTTON */
+.btn{
+  background:#d1d5db;
+  color:black;
+  padding:.9rem 1.6rem;
+  border-radius:8px;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:#9ca3af;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .header{
+    flex-direction:column;
+    text-align:center;
+    gap:.5rem;
+  }
+
+  .hero{
+    justify-content:center;
+  }
+
+  .hero-content{
+    text-align:center;
+  }
+
+  .header-right a{
+    margin:0 .7rem;
+  }
+}
+
+/* ABILITIES SECTION */
+.skills {
+  padding: 4rem 0 ;
+  background-color: #fff;
+}
+
+.skills h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #111;
+}
+
+/* Grid responsive pentru carduri */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 4rem;
+  padding: 4rem 5%;
+}
+
+.skill-card {
+  background-color: #f3f4f6;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(20px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.skill-card .skill-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.skill-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.skill-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/*education*/
+
+.education {
+  padding: 4rem 5%;
+  background-color: #f0f0f0;
+}
+
+.education h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #111;
+}
+
+.education-item {
+  max-width: 700px;
+  margin: 1rem auto;
+  text-align: left;
+  border-left: 3px solid #4f46e5;
+  padding-left: 1rem;
+}
+
+.education-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+  color: #111;
+  width: 100%;
+}
+
+.education-item span {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* projects section */
+.projects {
+    padding: 4rem 5%;
+    
+}
+
+.projects h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #111;
+}
+
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.project-card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0 1.2rem;
+}
+
+.project-links a {
+  text-decoration: none;
+  background: #d1d5db;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+
+
+/* CONTACT */
+.contact {
+  padding: 4rem 5%;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact-btn {
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  background: #4f46e5;
+  color: white;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: #3730a3;
+}
+
+/* FOOTER */
+.footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+}
+
+
+
+
