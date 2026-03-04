@@ -1,6 +1,7 @@
 import './App.css'
 import SocialIcons from './components/SocialIcons'
 
+
 function App() {
   return (
     <>
@@ -81,7 +82,7 @@ function App() {
     </div>
 
     <div className="skill-card">
-      <img src="/images/html.svg" alt="HTML 5" className="skill-icon" />
+      <img src="dist/images/html.svg" alt="HTML 5" className="skill-icon" />
       <h3>HTML 5</h3>
       <p>I have a good understanding of semantic HTML and use it to structure accessible and well-organized web pages.</p>
     </div>
@@ -118,9 +119,10 @@ function App() {
 
     {/* 1️⃣ Calculator */}
     <div className="project-card">
-      <img src="/images/calculator.jpg" alt="Calculator project" />
+      <img src='/calculator.jpg' alt="Calculator " />
       <h4>Calculator</h4>
       <p>Simple calculator built with JavaScript.</p>
+
 
       <div className="project-links">
         <a
@@ -143,12 +145,12 @@ function App() {
 
     {/* 2️⃣ Weather App */}
     <div className="project-card">
-      <img src="/images/weather app.jpg" alt="Weather app" />
+      <img src='/weather.jpg'  alt="Weather App" />
       <h4>Weather App</h4>
       <p>Weather application using API and dynamic background.</p>
 
       <div className="project-links">
-        <a href="https://est-pgn.github.io/weather-app/" target="_blank" rel="noopener noreferrer">
+        < a href="https://est-pgn.github.io/weather-app/" target="_blank" rel="noopener noreferrer">
           Live Project
         </a>
         <a href="https://github.com/est-pgn/weather-app" target="_blank" rel="noopener noreferrer">
@@ -160,7 +162,7 @@ function App() {
 
     {/* 3️⃣ Portfolio */}
     <div className="project-card">
-      <img src="/images/form.jpg" alt="Formular" />
+      <img src='/form.jpg' alt="Formular" />
       <h4>Formular</h4>
       <p>Simple form with input validation and clean UI.</p>
 
@@ -177,7 +179,7 @@ function App() {
 
     {/* 4️⃣ To-Do App */}
     <div className="project-card">
-      <img src="/images/to-do-list.jpg" alt="Todo app" />
+      <img src='/todo.jpg' alt="To-Do app" />
       <h4>To-Do App</h4>
       <p>Task manager with add, delete and complete features.</p>
 
