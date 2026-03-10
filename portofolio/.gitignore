@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#sistem files
+*.lnk
+*.zip
+*.rar
+*.tmp
